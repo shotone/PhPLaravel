@@ -46,6 +46,7 @@
         </div>
 
         <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+            <a href="{{ url('posts/create') }}">დამატება</a>
             <div class="grid grid-cols-1 md:grid-cols-2">
                 @foreach($posts as $post)
                 <div class="p-6">
@@ -58,6 +59,19 @@
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                             {{$post->post_text}}
                         </div>
+                        <div>
+                            <form method="post" action="{{route('posts.delete', $post->id)}}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit">წაშლა</button>
+                            </form>
+                            <a href="{{route('posts.edit', $post->id)}}">განახლება</a>
+                            <a href="{{route('posts.show', $post->id)}}">წაკითხვა</a>
+
+                        </div>
+
+
+
                     </div>
                 </div>
                 @endforeach

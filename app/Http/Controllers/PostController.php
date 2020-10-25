@@ -18,8 +18,40 @@ class PostController extends Controller
     }
 
     public function save(Request $request){
+        request()->validate([
+            'title'=> 'required',
+            'post_text'=> 'required',
+
+        ]);
+
         $post = new Post($request->all());
         $post->save();
+        return redirect()->back();
+    }
+
+    public function edit($id){
+        $post = Post::findOrfail($id);
+        return view('edit')->with('post',$post);
+    }
+
+    public function show(Post $post){
+        return view('post')->with('post', $post);
+    }
+
+    public function update(Request $request, $id){
+//        $post->update($request->all());
+        $post = Post::findOrfail($id);
+
+        $post->update($request->all());
+//        $post->title = $request->title;
+//        $post->post_text = $request->post_text;
+//        $post->save();
+
+        return redirect()->route('posss.show', $post->id);
+    }
+
+    public function delete(Post $post){
+        $post->delete();
         return redirect()->back();
     }
 }
