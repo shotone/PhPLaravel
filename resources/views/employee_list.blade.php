@@ -35,7 +35,7 @@
             @else
                 <td>არ არის აყვანილი</td>
             @endif
-            <td><a href="{{route('update', $employee->id)}}">განახლება</a></td>
+            <td><a href="{{url('edit', $employee->id)}}">განახლება</a></td>
         </tr>
 
     @endforeach

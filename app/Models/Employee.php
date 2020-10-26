@@ -20,4 +20,6 @@ class Employee extends Model
 
     ];
 
+    public $timestamps = false;
+
 }

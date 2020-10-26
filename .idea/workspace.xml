@@ -148,7 +148,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603724848408</updated>
-      <workItem from="1603724849635" duration="3972000" />
+      <workItem from="1603724849635" duration="5453000" />
     </task>
     <servers />
   </component>
@@ -160,10 +160,10 @@
       <screen x="0" y="22" width="1366" height="746" />
     </state>
     <state x="170" y="38" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.22.1366.746@0.22.1366.746" timestamp="1603726971742" />
-    <state x="481" y="210" width="393" height="377" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603728354830">
+    <state x="481" y="210" width="393" height="377" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603729820961">
       <screen x="0" y="22" width="1366" height="746" />
     </state>
-    <state x="481" y="210" width="393" height="377" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.22.1366.746@0.22.1366.746" timestamp="1603728354830" />
+    <state x="481" y="210" width="393" height="377" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.22.1366.746@0.22.1366.746" timestamp="1603729820961" />
     <state x="436" y="156" width="544" height="491" key="NewPhpClassDialog" timestamp="1603727674149">
       <screen x="0" y="22" width="1366" height="746" />
     </state>
@@ -176,5 +176,13 @@
       <screen x="0" y="22" width="1366" height="746" />
     </state>
     <state x="591" y="291" width="292" height="215" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.22.1366.746@0.22.1366.746" timestamp="1603726998336" />
+    <state x="483" y="248" width="389" height="296" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1603729191478">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state x="483" y="248" width="389" height="296" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.22.1366.746@0.22.1366.746" timestamp="1603729191478" />
+    <state x="439" y="179" width="487" height="432" key="find.popup" timestamp="1603730184209">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state x="439" y="179" width="487" height="432" key="find.popup/0.22.1366.746@0.22.1366.746" timestamp="1603730184209" />
   </component>
 </project>

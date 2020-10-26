@@ -14,6 +14,11 @@ class EmployeeController extends Controller
         return view('employee_list')->with('employees', $employees);
     }
 
+    public function edit($id){
+        $employee = Employee::findOrfail($id);
+        return view('edit')->with('employee',$employee);
+    }
+
     public function update(Request $request, $employee){
         $employee = Employee::findOrfail($employee);
 

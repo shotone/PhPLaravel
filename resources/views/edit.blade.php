@@ -27,6 +27,7 @@
         <input type="hidden" name="_token" id='csrf_toKen' value="{{ csrf_toKen() }}">
         <div class="box-footer">
             <button type="submit" class="btn btn-primary">Save</button>
+            <a href="{{url ('employees')}}">მთავარზე დაბრუნება</a>
         </div>
     </form>
 </div>

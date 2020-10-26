@@ -18,5 +18,6 @@ Route::get('/', function () {
 
 });
 
-Route::get('/employees', [\App\Http\Controllers\EmployeeController::class,'getEmployee'])->name('create');
-Route::get('/{employee}/update', [\App\Http\Controllers\EmployeeController::class,'update'])->name('update');
+Route::get('/employees', [\App\Http\Controllers\EmployeeController::class,'getEmployee'])->name('employees');
+Route::post('/update/{employee}', [\App\Http\Controllers\EmployeeController::class,'update'])->name('update');
+Route::get('/edit/{employee}', [\App\Http\Controllers\EmployeeController::class,'edit'])->name('edit');
