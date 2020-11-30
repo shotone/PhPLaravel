@@ -35,9 +35,7 @@ class QuizzController
             if ($answer == $form->correct){
                 $counter++;
             }
-        }
-//        $question1 = $request->input('answer');
-        echo "<h1> თქვენი სწორი პასუხების რაოდენობა არის $counter</h1>";
+        }echo "<h1> თქვენი სწორი პასუხების რაოდენობა არის $counter</h1>";
 
     }
 
