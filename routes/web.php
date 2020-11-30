@@ -23,7 +23,7 @@ Route::get('/logout', [\App\Http\Controllers\LoginController::class,'logout'])->
 
 
 Route::get('/quizz', [\App\Http\Controllers\QuizzController::class,'quizz'])->name('quizz');
-Route::get('/results', [\App\Http\Controllers\ResultsController::class,'results'])->name('results');
+Route::get('/results', [\App\Http\Controllers\QuizzController::class,'result'])->name('results');
 Route::post('/create_quiz', [\App\Http\Controllers\QuizzController::class,'Createquizz'])->name('Createquizz');
 Route::get('/view_create_quiz', [\App\Http\Controllers\QuizzController::class,'view_create_quiz'])->name('createquizz');
 
